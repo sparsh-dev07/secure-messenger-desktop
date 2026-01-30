@@ -16,8 +16,8 @@ A high-performance Electron + React + TypeScript chat application simulating a s
 ## Getting Started
 
 ### Prerequisites
-- **Node.js** (v18 or higher recommended)
-- **npm** or **yarn**
+- **Node.js** – v22.21.1 (Highly Recommended)  
+- **npm**
 
 ### Installation
 1. **Clone the repository**:
@@ -35,6 +35,11 @@ A high-performance Electron + React + TypeScript chat application simulating a s
    - Initialization: Handled automatically by `src/main/db/seed.ts` on startup.
 
 ### Running the App
+
+Rebuild native modules for Electron:
+```bash
+npx electron-rebuild
+```
 Start the development server with:
 ```bash
 npm run dev
@@ -79,6 +84,13 @@ The SQLite database is optimized for performance with the following indexes:
 - **better-sqlite3**: Selected over `sql.js` for significantly better performance in desktop environments where filesystem access is available.
 
 ### Future Improvements
-- **SQLCipher**: Integrate SQLCipher to provide full database-level encryption at rest.
-- **E2EE**: Implement Signal Protocol for actual end-to-end encryption.
+- **SQLCipher**: Integrate SQLCipher to provi
+de full database-level encryption at rest.
+- **E2EE**: Implement Signal Protocol for actual
+ end-to-end encryption.
 - **Tests**: Expand the current unit test suite (see `chat.test.ts`) to include more complex integration tests for the WebSocket state machine.
+
+
+
+<img width="1839" height="1042" alt="image" src="https://github.com/user-attachments/assets/dff17b6f-9d26-4b36-b240-22c826a0e4be" />
+
